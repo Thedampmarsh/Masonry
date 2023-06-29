@@ -1,0 +1,80 @@
+      *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        :root {
+            --transform-translate:450px;
+        }
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: black;
+    width:500px;
+    height:500px;
+     transition: transform 1s ease-in;
+     overflow: hidden;
+     display: flex;
+     flex-wrap: wrap;
+     white-space: nowrap;
+}
+
+.place{
+  
+    border:white 2px solid;
+    background-color: brown;
+    height:50px;
+    width:100px;
+    animation: brick-lay 3s ease-in;
+    animation-fill-mode:forwards;
+    display: inline-block;
+    white-space: nowrap;
+}
+.course2{
+    animation-delay: .5s;
+    border:white 2px solid;
+    background-color: brown;
+    height:50px;
+    width:100px;
+    animation: brick-lay2 3s ease-in;
+    animation-fill-mode:forwards;
+    display: inline-block;
+    white-space: nowrap;
+    top:0;
+}
+
+
+@keyframes brick-lay {
+    0%{
+           transform:translateY(0);
+    
+    }
+    100% {
+        transform: translateY(450px);}
+}
+
+
+@keyframes brick-lay2 {
+    0%{
+           
+        transform: translate(-50%, -50%);
+    }
+    100% {
+                transform: translate(-50%, 150px);
+}
+
+
+
+/* @keyframes course2 {
+    0%{
+        transform:translateY(0); 
+    }
+    100% {
+
+        transform: translateY(400px);}
+} */
