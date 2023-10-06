@@ -19,9 +19,7 @@ body{
     height:500px;
      transition: transform 1s ease-in;
      overflow: hidden;
-     display: flex;
-     flex-wrap: wrap;
-     white-space: nowrap;
+     position:relative;
 }
 
 .place{
@@ -34,6 +32,9 @@ body{
     animation-fill-mode:forwards;
     display: inline-block;
     white-space: nowrap;
+    position: absolute;
+    left: 100px;
+    top: 200px;
 }
 .course2{
     animation-delay: .5s;
